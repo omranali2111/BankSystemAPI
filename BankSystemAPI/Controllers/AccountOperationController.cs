@@ -263,6 +263,7 @@ namespace BankSystemAPI.Controllers
             DateTime minSqlDate = new DateTime(1753, 1, 1);
             DateTime startDate;
 
+
             switch (period.ToLower())
             {
                 case "last transaction":
