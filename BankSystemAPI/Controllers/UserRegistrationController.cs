@@ -15,7 +15,7 @@ namespace BankSystemAPI.Controllers
         {
             dbContext = DB;
         }
-
+        [HttpPost]
         public void RegisterUser(string name, string email, string password)
         {
             
@@ -49,6 +49,7 @@ namespace BankSystemAPI.Controllers
             // Use regex.IsMatch to check if the password matches the pattern
             return regex.IsMatch(password);
         }
+        [HttpGet]
         public bool UserLogin(string email, string password)
         {
             
