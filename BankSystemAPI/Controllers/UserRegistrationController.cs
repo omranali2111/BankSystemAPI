@@ -16,9 +16,10 @@ namespace BankSystemAPI.Controllers
             dbContext = DB;
         }
         [HttpPost]
-        public void RegisterUser(string name, string email, string password)
+        public ActionResult RegisterUser(string name, string email, string password)
         {
-            
+            try
+            {
                 if (IsPasswordValid(password))
                 {
                     var newUser = new User
@@ -30,14 +31,45 @@ namespace BankSystemAPI.Controllers
 
                     dbContext.Users.Add(newUser);
                     dbContext.SaveChanges();
+                    return Ok("Registration successful!"); // 200 OK
+                }
+                else
+                {                 
+                    return BadRequest("Password is invalid."); // 400 Bad Request
+                }
+            }
+            catch (Exception ex)
+            {             
+                return StatusCode(500, $"Internal Server Error {ex.Message}"); // 500 Internal Server Error
+            }
+        }
 
-                    Console.WriteLine("Registration successful!");
+        [HttpGet]
+        public ActionResult<bool> UserLogin(string email, string password)
+        {
+            try
+            {
+                var user = dbContext.Users.FirstOrDefault(u => u.Email == email && u.Password == password);
+
+                if (user != null)
+                {
+                   
+                    return Ok(true); // 200 OK
                 }
                 else
                 {
-                    Console.WriteLine("Password is invalid.");
+                   
+                    return NotFound("Login failed. Check your email and password."); // 404 Not Found
                 }
+            }
+            catch (Exception ex)
+            {
+               
+                return StatusCode(500, "Internal Server Error"); // 500 Internal Server Error
+            }
         }
+
+
         private bool IsPasswordValid(string password)
         {
             // Define the regular expression pattern
@@ -49,26 +81,6 @@ namespace BankSystemAPI.Controllers
             // Use regex.IsMatch to check if the password matches the pattern
             return regex.IsMatch(password);
         }
-        [HttpGet]
-        public bool UserLogin(string email, string password)
-        {
-            
-                var user = dbContext.Users.FirstOrDefault(u => u.Email == email && u.Password == password);
-
-                if (user != null)
-                {
-                    Console.WriteLine("Login successful!");
-                    return true; // User exists, login successful
-                }
-                else
-                {
-                    Console.WriteLine("Login failed. Check your email and password.");
-                    return false; // Email or password is incorrect
-                }
-            
-        }
-
-
 
     }
 
