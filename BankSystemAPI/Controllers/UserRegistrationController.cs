@@ -44,31 +44,7 @@ namespace BankSystemAPI.Controllers
             }
         }
 
-        [HttpGet]
-        public ActionResult<bool> UserLogin(string email, string password)
-        {
-            try
-            {
-                var user = dbContext.Users.FirstOrDefault(u => u.Email == email && u.Password == password);
-
-                if (user != null)
-                {
-                   
-                    return Ok(true); // 200 OK
-                }
-                else
-                {
-                   
-                    return NotFound("Login failed. Check your email and password."); // 404 Not Found
-                }
-            }
-            catch (Exception ex)
-            {
-               
-                return StatusCode(500, "Internal Server Error"); // 500 Internal Server Error
-            }
-        }
-
+       
 
         private bool IsPasswordValid(string password)
         {

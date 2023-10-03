@@ -15,7 +15,7 @@ namespace BankSystemAPI.Controllers
             dbContext = DB;
         }
         [HttpPost("add-account")]
-        public ActionResult AddAccount(int userId, string accountHolderName, decimal currentBalance)
+        public IActionResult AddAccount( string accountHolderName, decimal currentBalance)
         {
             try
             {
@@ -23,7 +23,7 @@ namespace BankSystemAPI.Controllers
                 {
                     AccountHolderName = accountHolderName,
                     Balance = currentBalance,
-                    UserId = userId
+               
                 };
 
                 dbContext.Accounts.Add(newAccount);
