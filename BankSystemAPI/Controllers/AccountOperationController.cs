@@ -1,6 +1,8 @@
 ﻿using BankSystemAPI.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 
 namespace BankSystemAPI.Controllers
 {
@@ -36,12 +38,23 @@ namespace BankSystemAPI.Controllers
                 return StatusCode(500, "An error occurred while adding the account: " + e.Message);
             }
         }
-
-        [HttpGet("view-accounts/{userId}")]
-        public ActionResult<List<Account>> ViewAccountsForUser(int userId)
+        [Authorize]
+        [HttpGet("view-accounts")]
+        public ActionResult<List<Account>> ViewAccountsForUser()
         {
             try
             {
+                // Get UserId from the claims
+                var userIdClaim = HttpContext.User.FindFirst(ClaimTypes.NameIdentifier);
+
+                if (userIdClaim == null)
+                {
+                    // UserId claim not found
+                    return BadRequest("UserId claim not found.");
+                }
+
+                int userId = int.Parse(userIdClaim.Value);
+
                 var userAccounts = dbContext.Accounts
                     .Where(account => account.UserId == userId)
                     .ToList();
@@ -60,11 +73,22 @@ namespace BankSystemAPI.Controllers
                 return StatusCode(500, "An error occurred while fetching user accounts: " + e.Message);
             }
         }
+        [Authorize]
         [HttpPut("withdraw")]
-        public ActionResult Withdraw(int userId, int accountNumber, decimal withdrawalAmount)
+        public ActionResult Withdraw( int accountNumber, decimal withdrawalAmount)
         {
             try
             {
+                // Get UserId from the claims
+                var userIdClaim = HttpContext.User.FindFirst(ClaimTypes.NameIdentifier);
+
+                if (userIdClaim == null)
+                {
+                    // UserId claim not found
+                    return BadRequest("UserId claim not found.");
+                }
+
+                int userId = int.Parse(userIdClaim.Value);
                 var account = dbContext.Accounts.FirstOrDefault(a => a.AccountNumber == accountNumber && a.UserId == userId);
 
                 if (account != null)
@@ -95,12 +119,22 @@ namespace BankSystemAPI.Controllers
                 return StatusCode(500, "An error occurred: " + e.Message);
             }
         }
-
+        [Authorize]
         [HttpPut("deposit")]
-        public ActionResult Deposit(int userId, int accountNumber, decimal depositAmount)
+        public ActionResult Deposit( int accountNumber, decimal depositAmount)
         {
             try
             {
+                // Get UserId from the claims
+                var userIdClaim = HttpContext.User.FindFirst(ClaimTypes.NameIdentifier);
+
+                if (userIdClaim == null)
+                {
+                    // UserId claim not found
+                    return BadRequest("UserId claim not found.");
+                }
+
+                int userId = int.Parse(userIdClaim.Value);
                 var account = dbContext.Accounts.FirstOrDefault(a => a.AccountNumber == accountNumber && a.UserId == userId);
 
                 if (account != null)
@@ -122,6 +156,7 @@ namespace BankSystemAPI.Controllers
                 return StatusCode(500, "An error occurred: " + e.Message);
             }
         }
+        [Authorize]
         [HttpPut("transfer")]
         public ActionResult Transfer(int userId, int sourceAccountNumber, int targetAccountNumber, decimal transferAmount)
         {
@@ -166,7 +201,7 @@ namespace BankSystemAPI.Controllers
                 return StatusCode(500, "An error occurred: " + e.Message);
             }
         }
-
+        [Authorize]
         [HttpPost("RecordTransaction")]
         private ActionResult RecordTransaction(string transactionType, decimal amount, int? sourceAccountNumber, int? targetAccountNumber)
         {
@@ -211,8 +246,9 @@ namespace BankSystemAPI.Controllers
                 return StatusCode(500, "An error occurred while recording the transaction: " + e.Message);
             }
         }
-        [HttpGet("transaction-history/{userId}/{period}")]
-        public ActionResult<List<Transaction>> ViewTransactionHistory(int userId, string period)
+        [Authorize]
+        [HttpGet("transaction-history/{period}")]
+        public ActionResult<List<Transaction>> ViewTransactionHistory( string period)
         {
             DateTime minSqlDate = new DateTime(1753, 1, 1);
             DateTime startDate;
@@ -240,6 +276,16 @@ namespace BankSystemAPI.Controllers
 
             try
             {
+                // Get UserId from the claims
+                var userIdClaim = HttpContext.User.FindFirst(ClaimTypes.NameIdentifier);
+
+                if (userIdClaim == null)
+                {
+                    // UserId claim not found
+                    return BadRequest("UserId claim not found.");
+                }
+
+                int userId = int.Parse(userIdClaim.Value);
                 var transactions = dbContext.Transactions
                     .Where(t => (t.SrcAccNO.HasValue && dbContext.Accounts.Any(a => a.UserId == userId && a.AccountNumber == t.SrcAccNO.Value))
                                 || (t.TargetAccNO.HasValue && dbContext.Accounts.Any(a => a.UserId == userId && a.AccountNumber == t.TargetAccNO.Value))
@@ -261,12 +307,22 @@ namespace BankSystemAPI.Controllers
                 return StatusCode(500, "An error occurred: " + e.Message);
             }
         }
-
+        [Authorize]
         [HttpDelete("delete-account")]
-        public ActionResult DeleteUserAccount(int userId, int accountNumberToDelete, string email, string password)
+        public ActionResult DeleteUserAccount( int accountNumberToDelete, string email, string password)
         {
             try
             {
+                // Get UserId from the claims
+                var userIdClaim = HttpContext.User.FindFirst(ClaimTypes.NameIdentifier);
+
+                if (userIdClaim == null)
+                {
+                    // UserId claim not found
+                    return BadRequest("UserId claim not found.");
+                }
+
+                int userId = int.Parse(userIdClaim.Value);
                 var accountToDelete = dbContext.Accounts
                     .FirstOrDefault(a => a.AccountNumber == accountNumberToDelete && a.UserId == userId);
 
