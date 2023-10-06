@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
 namespace BankSystemAPI.Models
 {
@@ -18,13 +19,13 @@ namespace BankSystemAPI.Models
         public decimal Balance { get; set; }
 
         // Foreign Key property
-
+        [JsonIgnore]
         public User User { get; set; }
 
         // Navigation property to represent the relationship with the User entity
         [ForeignKey("User")]
         public int UserId { get; set; }
-
+        [JsonIgnore]
         public List<Transaction> transaction { get; set; }
     }
 }

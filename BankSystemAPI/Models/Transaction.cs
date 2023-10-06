@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
 namespace BankSystemAPI.Models
 {
@@ -18,6 +19,7 @@ namespace BankSystemAPI.Models
         public int AccountId { get; set; }
 
         // Navigation property for the Account
+        [JsonIgnore]
         public Account account { get; set; }
     }
 }

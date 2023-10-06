@@ -1,0 +1,60 @@
+2023-10-06 19:52:44.033 +04:00 [INF] User profile is available. Using 'C:\Users\ict\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-06 19:52:44.662 +04:00 [INF] Now listening on: https://localhost:7157
+2023-10-06 19:52:44.664 +04:00 [INF] Now listening on: http://localhost:5213
+2023-10-06 19:52:44.668 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-06 19:52:44.669 +04:00 [INF] Hosting environment: Development
+2023-10-06 19:52:44.670 +04:00 [INF] Content root path: C:\Users\ict\Desktop\code-TRA\API\BankSystemAPI\BankSystemAPI\
+2023-10-06 19:52:45.576 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/swagger/index.html - -
+2023-10-06 19:52:46.394 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/swagger/index.html - - - 200 - text/html;charset=utf-8 826.7068ms
+2023-10-06 19:52:46.440 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/_vs/browserLink - -
+2023-10-06 19:52:46.441 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/_framework/aspnetcore-browser-refresh.js - -
+2023-10-06 19:52:46.462 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 20.8775ms
+2023-10-06 19:52:46.584 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 143.3831ms
+2023-10-06 19:52:46.669 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/swagger/v1/swagger.json - -
+2023-10-06 19:52:46.824 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 154.2891ms
+2023-10-06 19:53:49.354 +04:00 [INF] User profile is available. Using 'C:\Users\ict\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-06 19:53:49.803 +04:00 [INF] Now listening on: https://localhost:7157
+2023-10-06 19:53:49.824 +04:00 [INF] Now listening on: http://localhost:5213
+2023-10-06 19:53:49.831 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-06 19:53:49.848 +04:00 [INF] Hosting environment: Development
+2023-10-06 19:53:49.850 +04:00 [INF] Content root path: C:\Users\ict\Desktop\code-TRA\API\BankSystemAPI\BankSystemAPI\
+2023-10-06 19:53:51.367 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/swagger/index.html - -
+2023-10-06 19:53:51.834 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/_framework/aspnetcore-browser-refresh.js - -
+2023-10-06 19:53:51.834 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/_vs/browserLink - -
+2023-10-06 19:53:51.835 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/swagger/index.html - - - 200 - text/html;charset=utf-8 476.9734ms
+2023-10-06 19:53:51.854 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 20.0975ms
+2023-10-06 19:53:51.867 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 32.9780ms
+2023-10-06 19:53:51.970 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/swagger/v1/swagger.json - -
+2023-10-06 19:53:52.118 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 148.3440ms
+2023-10-06 19:54:03.110 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/api/AccountOperation/view-accounts - -
+2023-10-06 19:54:03.474 +04:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-10-06 19:54:03.481 +04:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-10-06 19:54:03.484 +04:00 [INF] HTTP GET /api/AccountOperation/view-accounts responded 401 in 346.2033 ms
+2023-10-06 19:54:03.492 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/api/AccountOperation/view-accounts - - - 401 0 - 381.9355ms
+2023-10-06 19:54:32.857 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7157/api/UserLogin/user-login?email=omran%40hotmail.com&password=Aa912345678 - 0
+2023-10-06 19:54:32.869 +04:00 [INF] CORS policy execution successful.
+2023-10-06 19:54:32.878 +04:00 [INF] Executing endpoint 'BankSystemAPI.Controllers.UserLoginController.GenerateJwtToken (BankSystemAPI)'
+2023-10-06 19:54:32.946 +04:00 [INF] Route matched with {action = "GenerateJwtToken", controller = "UserLogin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GenerateJwtToken(System.String, System.String) on controller BankSystemAPI.Controllers.UserLoginController (BankSystemAPI).
+2023-10-06 19:54:34.748 +04:00 [WRN] No store type was specified for the decimal property 'Amount' on entity type 'Transaction'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-10-06 19:54:36.875 +04:00 [INF] Executed DbCommand (358ms) [Parameters=[@__email_0='?' (Size = 255), @__password_1='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[UserId], [u].[Email], [u].[Name], [u].[Password]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0 AND [u].[Password] = @__password_1
+2023-10-06 19:54:37.295 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2023-10-06 19:54:37.310 +04:00 [INF] Executed action BankSystemAPI.Controllers.UserLoginController.GenerateJwtToken (BankSystemAPI) in 4350.0504ms
+2023-10-06 19:54:37.314 +04:00 [INF] Executed endpoint 'BankSystemAPI.Controllers.UserLoginController.GenerateJwtToken (BankSystemAPI)'
+2023-10-06 19:54:37.317 +04:00 [INF] HTTP POST /api/UserLogin/user-login responded 200 in 4456.4986 ms
+2023-10-06 19:54:37.347 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7157/api/UserLogin/user-login?email=omran%40hotmail.com&password=Aa912345678 - 0 - 200 - text/plain;+charset=utf-8 4490.4692ms
+2023-10-06 19:57:28.099 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7157/api/AccountOperation/view-accounts - -
+2023-10-06 19:57:28.233 +04:00 [INF] Executing endpoint 'BankSystemAPI.Controllers.AccountOperationController.ViewAccountsForUser (BankSystemAPI)'
+2023-10-06 19:57:28.239 +04:00 [INF] Route matched with {action = "ViewAccountsForUser", controller = "AccountOperation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BankSystemAPI.Models.Account]] ViewAccountsForUser() on controller BankSystemAPI.Controllers.AccountOperationController (BankSystemAPI).
+2023-10-06 19:57:28.274 +04:00 [INF] Executed DbCommand (19ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[AccountNumber], [a].[AccountHolderName], [a].[Balance], [a].[UserId]
+FROM [Accounts] AS [a]
+WHERE [a].[UserId] = @__userId_0
+2023-10-06 19:57:28.292 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BankSystemAPI.Models.Account, BankSystemAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-10-06 19:57:28.332 +04:00 [INF] Executed action BankSystemAPI.Controllers.AccountOperationController.ViewAccountsForUser (BankSystemAPI) in 91.2755ms
+2023-10-06 19:57:28.335 +04:00 [INF] Executed endpoint 'BankSystemAPI.Controllers.AccountOperationController.ViewAccountsForUser (BankSystemAPI)'
+2023-10-06 19:57:28.336 +04:00 [INF] HTTP GET /api/AccountOperation/view-accounts responded 200 in 233.8822 ms
+2023-10-06 19:57:28.338 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7157/api/AccountOperation/view-accounts - - - 200 - application/json;+charset=utf-8 239.1125ms

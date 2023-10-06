@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
 namespace BankSystemAPI.Models
 {
@@ -20,7 +21,7 @@ namespace BankSystemAPI.Models
         [Required]
         [MaxLength(255)]
         public string Password { get; set; }
-
+        [JsonIgnore]
         public List<Account> Accounts { get; set; }
     }
 }

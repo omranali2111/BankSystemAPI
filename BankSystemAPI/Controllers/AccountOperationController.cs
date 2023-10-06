@@ -16,6 +16,7 @@ namespace BankSystemAPI.Controllers
         {
             dbContext = DB;
         }
+        [Authorize]
         [HttpPost("add-account")]
         public IActionResult AddAccount( string accountHolderName, decimal currentBalance)
         {

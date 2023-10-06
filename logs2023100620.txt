@@ -1,0 +1,52 @@
+2023-10-06 20:02:52.395 +04:00 [INF] User profile is available. Using 'C:\Users\ict\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-06 20:02:52.719 +04:00 [INF] Now listening on: https://localhost:7157
+2023-10-06 20:02:52.720 +04:00 [INF] Now listening on: http://localhost:5213
+2023-10-06 20:02:52.724 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-06 20:02:52.726 +04:00 [INF] Hosting environment: Development
+2023-10-06 20:02:52.726 +04:00 [INF] Content root path: C:\Users\ict\Desktop\code-TRA\API\BankSystemAPI\BankSystemAPI\
+2023-10-06 20:02:53.857 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/swagger/index.html - -
+2023-10-06 20:02:54.530 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/swagger/index.html - - - 200 - text/html;charset=utf-8 678.7460ms
+2023-10-06 20:02:54.547 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/_vs/browserLink - -
+2023-10-06 20:02:54.547 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/_framework/aspnetcore-browser-refresh.js - -
+2023-10-06 20:02:54.565 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 18.3017ms
+2023-10-06 20:02:54.577 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 30.0374ms
+2023-10-06 20:02:54.696 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/swagger/v1/swagger.json - -
+2023-10-06 20:02:54.856 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 159.6064ms
+2023-10-06 20:03:21.674 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7157/api/AccountOperation/view-accounts - -
+2023-10-06 20:03:21.997 +04:00 [INF] Failed to validate the token.
+System.ArgumentException: IDX12729: Unable to decode the header '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string. jwtEncodedString: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+ ---> Microsoft.IdentityModel.Json.JsonReaderException: Unexpected character encountered while parsing value: k. Path '', line 0, position 0.
+   at Microsoft.IdentityModel.Json.JsonTextReader.ParseValue()
+   at Microsoft.IdentityModel.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Microsoft.IdentityModel.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Microsoft.IdentityModel.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Microsoft.IdentityModel.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at System.IdentityModel.Tokens.Jwt.JsonExtensions.DeserializeJwtHeader(String jsonString)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityToken.Decode(String[] tokenParts, String rawData)
+   --- End of inner exception stack trace ---
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityToken.Decode(String[] tokenParts, String rawData)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ReadJwtToken(String token)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateJWS(String token, TokenValidationParameters validationParameters, BaseConfiguration currentConfiguration, SecurityToken& signatureValidatedToken, ExceptionDispatchInfo& exceptionThrown)
+--- End of stack trace from previous location ---
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, JwtSecurityToken outerToken, TokenValidationParameters validationParameters, SecurityToken& signatureValidatedToken)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-10-06 20:03:22.075 +04:00 [INF] Bearer was not authenticated. Failure message: IDX12729: Unable to decode the header '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string. jwtEncodedString: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+2023-10-06 20:03:22.083 +04:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-10-06 20:03:22.095 +04:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-10-06 20:03:22.102 +04:00 [INF] HTTP GET /api/AccountOperation/view-accounts responded 401 in 409.0951 ms
+2023-10-06 20:03:22.128 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7157/api/AccountOperation/view-accounts - - - 401 0 - 454.2787ms
+2023-10-06 20:03:52.290 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7157/api/AccountOperation/view-accounts - -
+2023-10-06 20:03:52.511 +04:00 [INF] Executing endpoint 'BankSystemAPI.Controllers.AccountOperationController.ViewAccountsForUser (BankSystemAPI)'
+2023-10-06 20:03:52.545 +04:00 [INF] Route matched with {action = "ViewAccountsForUser", controller = "AccountOperation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BankSystemAPI.Models.Account]] ViewAccountsForUser() on controller BankSystemAPI.Controllers.AccountOperationController (BankSystemAPI).
+2023-10-06 20:03:53.994 +04:00 [WRN] No store type was specified for the decimal property 'Amount' on entity type 'Transaction'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-10-06 20:03:55.714 +04:00 [INF] Executed DbCommand (120ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[AccountNumber], [a].[AccountHolderName], [a].[Balance], [a].[UserId]
+FROM [Accounts] AS [a]
+WHERE [a].[UserId] = @__userId_0
+2023-10-06 20:03:55.879 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BankSystemAPI.Models.Account, BankSystemAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-10-06 20:03:55.915 +04:00 [INF] Executed action BankSystemAPI.Controllers.AccountOperationController.ViewAccountsForUser (BankSystemAPI) in 3362.7496ms
+2023-10-06 20:03:55.918 +04:00 [INF] Executed endpoint 'BankSystemAPI.Controllers.AccountOperationController.ViewAccountsForUser (BankSystemAPI)'
+2023-10-06 20:03:55.919 +04:00 [INF] HTTP GET /api/AccountOperation/view-accounts responded 200 in 3624.4707 ms
+2023-10-06 20:03:55.938 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7157/api/AccountOperation/view-accounts - - - 200 - application/json;+charset=utf-8 3648.8897ms
