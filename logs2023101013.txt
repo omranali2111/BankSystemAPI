@@ -1,0 +1,65 @@
+2023-10-10 13:00:26.105 +04:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7157/api/AccountOperation/withdraw application/json;+charset=utf-8 -
+2023-10-10 13:00:26.105 +04:00 [INF] Request starting HTTP/1.1 POST https://localhost:7157/api/UserLogin/user-login application/json;+charset=utf-8 -
+2023-10-10 13:00:26.364 +04:00 [INF] Executing endpoint 'BankSystemAPI.Controllers.UserLoginController.GenerateJwtToken (BankSystemAPI)'
+2023-10-10 13:00:26.375 +04:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-10-10 13:00:26.394 +04:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-10-10 13:00:26.403 +04:00 [INF] HTTP PUT /api/AccountOperation/withdraw responded 401 in 275.7598 ms
+2023-10-10 13:00:26.424 +04:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7157/api/AccountOperation/withdraw application/json;+charset=utf-8 - - 401 0 - 319.6565ms
+2023-10-10 13:00:26.430 +04:00 [INF] Route matched with {action = "GenerateJwtToken", controller = "UserLogin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GenerateJwtToken(BankSystemAPI.Models.loginClass) on controller BankSystemAPI.Controllers.UserLoginController (BankSystemAPI).
+2023-10-10 13:00:28.174 +04:00 [WRN] No store type was specified for the decimal property 'Amount' on entity type 'Transaction'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-10-10 13:00:29.919 +04:00 [INF] Executed DbCommand (128ms) [Parameters=[@__user1_Email_0='?' (Size = 255), @__user1_Password_1='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[UserId], [u].[Email], [u].[Name], [u].[Password]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__user1_Email_0 AND [u].[Password] = @__user1_Password_1
+2023-10-10 13:00:30.300 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2023-10-10 13:00:30.312 +04:00 [INF] Executed action BankSystemAPI.Controllers.UserLoginController.GenerateJwtToken (BankSystemAPI) in 3869.8358ms
+2023-10-10 13:00:30.314 +04:00 [INF] Executed endpoint 'BankSystemAPI.Controllers.UserLoginController.GenerateJwtToken (BankSystemAPI)'
+2023-10-10 13:00:30.315 +04:00 [INF] HTTP POST /api/UserLogin/user-login responded 200 in 4195.2488 ms
+2023-10-10 13:00:30.337 +04:00 [INF] Request finished HTTP/1.1 POST https://localhost:7157/api/UserLogin/user-login application/json;+charset=utf-8 - - 200 - text/plain;+charset=utf-8 4232.9085ms
+2023-10-10 13:14:17.360 +04:00 [INF] User profile is available. Using 'C:\Users\ict\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-10 13:14:17.870 +04:00 [INF] Now listening on: https://localhost:7157
+2023-10-10 13:14:17.899 +04:00 [INF] Now listening on: http://localhost:5213
+2023-10-10 13:14:18.007 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-10 13:14:18.012 +04:00 [INF] Hosting environment: Development
+2023-10-10 13:14:18.013 +04:00 [INF] Content root path: C:\Users\ict\Desktop\code-TRA\API\BankSystemAPI\BankSystemAPI\
+2023-10-10 13:14:18.993 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/swagger/index.html - -
+2023-10-10 13:14:20.135 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/_framework/aspnetcore-browser-refresh.js - -
+2023-10-10 13:14:20.226 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/swagger/index.html - - - 200 - text/html;charset=utf-8 1051.1146ms
+2023-10-10 13:14:20.252 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/_vs/browserLink - -
+2023-10-10 13:14:20.251 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 11.2203ms
+2023-10-10 13:14:21.044 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 791.3649ms
+2023-10-10 13:14:21.127 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/swagger/v1/swagger.json - -
+2023-10-10 13:14:21.643 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 515.8460ms
+2023-10-10 13:17:56.128 +04:00 [INF] Request starting HTTP/1.1 POST https://localhost:7157/api/UserLogin/user-login application/json;+charset=utf-8 -
+2023-10-10 13:17:56.253 +04:00 [INF] Executing endpoint 'BankSystemAPI.Controllers.UserLoginController.GenerateJwtToken (BankSystemAPI)'
+2023-10-10 13:17:56.312 +04:00 [INF] Route matched with {action = "GenerateJwtToken", controller = "UserLogin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GenerateJwtToken(BankSystemAPI.Models.loginClass) on controller BankSystemAPI.Controllers.UserLoginController (BankSystemAPI).
+2023-10-10 13:17:58.099 +04:00 [WRN] No store type was specified for the decimal property 'Amount' on entity type 'Transaction'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-10-10 13:18:00.082 +04:00 [INF] Executed DbCommand (138ms) [Parameters=[@__user1_Email_0='?' (Size = 255), @__user1_Password_1='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[UserId], [u].[Email], [u].[Name], [u].[Password]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__user1_Email_0 AND [u].[Password] = @__user1_Password_1
+2023-10-10 13:18:00.507 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2023-10-10 13:18:00.516 +04:00 [INF] Executed action BankSystemAPI.Controllers.UserLoginController.GenerateJwtToken (BankSystemAPI) in 4194.8383ms
+2023-10-10 13:18:00.518 +04:00 [INF] Executed endpoint 'BankSystemAPI.Controllers.UserLoginController.GenerateJwtToken (BankSystemAPI)'
+2023-10-10 13:18:00.521 +04:00 [INF] HTTP POST /api/UserLogin/user-login responded 200 in 4384.3990 ms
+2023-10-10 13:18:00.549 +04:00 [INF] Request finished HTTP/1.1 POST https://localhost:7157/api/UserLogin/user-login application/json;+charset=utf-8 - - 200 - text/plain;+charset=utf-8 4420.2613ms
+2023-10-10 13:53:33.315 +04:00 [INF] Request starting HTTP/1.1 POST https://localhost:7157/api/UserLogin/user-login application/json;+charset=utf-8 -
+2023-10-10 13:53:33.361 +04:00 [INF] Executing endpoint 'BankSystemAPI.Controllers.UserLoginController.GenerateJwtToken (BankSystemAPI)'
+2023-10-10 13:53:33.367 +04:00 [INF] Route matched with {action = "GenerateJwtToken", controller = "UserLogin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GenerateJwtToken(BankSystemAPI.Models.loginClass) on controller BankSystemAPI.Controllers.UserLoginController (BankSystemAPI).
+2023-10-10 13:53:33.547 +04:00 [INF] Executed DbCommand (21ms) [Parameters=[@__user1_Email_0='?' (Size = 255), @__user1_Password_1='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[UserId], [u].[Email], [u].[Name], [u].[Password]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__user1_Email_0 AND [u].[Password] = @__user1_Password_1
+2023-10-10 13:53:33.560 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2023-10-10 13:53:33.561 +04:00 [INF] Executed action BankSystemAPI.Controllers.UserLoginController.GenerateJwtToken (BankSystemAPI) in 187.1288ms
+2023-10-10 13:53:33.562 +04:00 [INF] Executed endpoint 'BankSystemAPI.Controllers.UserLoginController.GenerateJwtToken (BankSystemAPI)'
+2023-10-10 13:53:33.563 +04:00 [INF] HTTP POST /api/UserLogin/user-login responded 200 in 216.2572 ms
+2023-10-10 13:53:33.565 +04:00 [INF] Request finished HTTP/1.1 POST https://localhost:7157/api/UserLogin/user-login application/json;+charset=utf-8 - - 200 - text/plain;+charset=utf-8 253.6888ms
+2023-10-10 13:53:33.571 +04:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7157/api/AccountOperation/withdraw application/json;+charset=utf-8 -
+2023-10-10 13:53:33.597 +04:00 [INF] Bearer was not authenticated. Failure message: No SecurityTokenValidator available for token.
+2023-10-10 13:53:33.623 +04:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-10-10 13:53:33.660 +04:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-10-10 13:53:33.663 +04:00 [INF] HTTP PUT /api/AccountOperation/withdraw responded 401 in 89.6826 ms
+2023-10-10 13:53:33.665 +04:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7157/api/AccountOperation/withdraw application/json;+charset=utf-8 - - 401 0 - 94.1771ms

@@ -1,0 +1,53 @@
+2023-10-10 09:40:43.597 +04:00 [INF] User profile is available. Using 'C:\Users\ict\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-10 09:40:44.510 +04:00 [INF] Now listening on: https://localhost:7157
+2023-10-10 09:40:44.527 +04:00 [INF] Now listening on: http://localhost:5213
+2023-10-10 09:40:44.536 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-10 09:40:44.548 +04:00 [INF] Hosting environment: Development
+2023-10-10 09:40:44.549 +04:00 [INF] Content root path: C:\Users\ict\Desktop\code-TRA\API\BankSystemAPI\BankSystemAPI\
+2023-10-10 09:40:47.561 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/swagger/index.html - -
+2023-10-10 09:40:48.924 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/_framework/aspnetcore-browser-refresh.js - -
+2023-10-10 09:40:48.929 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/_vs/browserLink - -
+2023-10-10 09:40:48.931 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/swagger/index.html - - - 200 - text/html;charset=utf-8 1366.8590ms
+2023-10-10 09:40:48.937 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 14.7748ms
+2023-10-10 09:40:49.209 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 279.2080ms
+2023-10-10 09:40:49.336 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/swagger/v1/swagger.json - -
+2023-10-10 09:40:49.774 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 438.2488ms
+2023-10-10 09:41:42.376 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7157/api/UserLogin/user-loginApi application/json 92
+2023-10-10 09:41:42.388 +04:00 [INF] CORS policy execution successful.
+2023-10-10 09:41:42.486 +04:00 [INF] Executing endpoint 'BankSystemAPI.Controllers.UserLoginController.auth (BankSystemAPI)'
+2023-10-10 09:41:42.532 +04:00 [INF] Route matched with {action = "auth", controller = "UserLogin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult auth(BankSystemAPI.Models.User) on controller BankSystemAPI.Controllers.UserLoginController (BankSystemAPI).
+2023-10-10 09:41:42.864 +04:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-10-10 09:41:42.894 +04:00 [INF] Executed action BankSystemAPI.Controllers.UserLoginController.auth (BankSystemAPI) in 351.9101ms
+2023-10-10 09:41:42.899 +04:00 [INF] Executed endpoint 'BankSystemAPI.Controllers.UserLoginController.auth (BankSystemAPI)'
+2023-10-10 09:41:42.902 +04:00 [INF] HTTP POST /api/UserLogin/user-loginApi responded 400 in 515.8867 ms
+2023-10-10 09:41:42.906 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7157/api/UserLogin/user-loginApi application/json 92 - 400 - application/problem+json;+charset=utf-8 530.8274ms
+2023-10-10 09:43:10.817 +04:00 [INF] Request starting HTTP/1.1 POST https://localhost:7157/api/UserLogin/user-loginApi text/plain;+charset=utf-8 44
+2023-10-10 09:43:10.822 +04:00 [INF] Executing endpoint 'BankSystemAPI.Controllers.UserLoginController.auth (BankSystemAPI)'
+2023-10-10 09:43:10.833 +04:00 [INF] Route matched with {action = "auth", controller = "UserLogin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult auth(BankSystemAPI.Models.User) on controller BankSystemAPI.Controllers.UserLoginController (BankSystemAPI).
+2023-10-10 09:43:10.852 +04:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2023-10-10 09:43:10.856 +04:00 [INF] Executed action BankSystemAPI.Controllers.UserLoginController.auth (BankSystemAPI) in 19.2709ms
+2023-10-10 09:43:10.860 +04:00 [INF] Executed endpoint 'BankSystemAPI.Controllers.UserLoginController.auth (BankSystemAPI)'
+2023-10-10 09:43:10.861 +04:00 [INF] HTTP POST /api/UserLogin/user-loginApi responded 415 in 41.2056 ms
+2023-10-10 09:43:10.863 +04:00 [INF] Request finished HTTP/1.1 POST https://localhost:7157/api/UserLogin/user-loginApi text/plain;+charset=utf-8 44 - 415 - application/problem+json;+charset=utf-8 45.8796ms
+2023-10-10 09:48:16.849 +04:00 [INF] User profile is available. Using 'C:\Users\ict\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-10 09:48:17.168 +04:00 [INF] Now listening on: https://localhost:7157
+2023-10-10 09:48:17.169 +04:00 [INF] Now listening on: http://localhost:5213
+2023-10-10 09:48:17.173 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-10 09:48:17.173 +04:00 [INF] Hosting environment: Development
+2023-10-10 09:48:17.174 +04:00 [INF] Content root path: C:\Users\ict\Desktop\code-TRA\API\BankSystemAPI\BankSystemAPI\
+2023-10-10 09:48:18.090 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/swagger/index.html - -
+2023-10-10 09:48:18.571 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/_vs/browserLink - -
+2023-10-10 09:48:18.572 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/_framework/aspnetcore-browser-refresh.js - -
+2023-10-10 09:48:18.667 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/swagger/index.html - - - 200 - text/html;charset=utf-8 509.9542ms
+2023-10-10 09:48:18.667 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 17.4531ms
+2023-10-10 09:48:18.938 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 366.5009ms
+2023-10-10 09:48:19.015 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/swagger/v1/swagger.json - -
+2023-10-10 09:48:19.238 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 224.4317ms
+2023-10-10 09:48:43.484 +04:00 [INF] Request starting HTTP/1.1 POST https://localhost:7157/api/UserLogin/user-loginApi application/json;+charset=utf-8 -
+2023-10-10 09:48:43.595 +04:00 [INF] Executing endpoint 'BankSystemAPI.Controllers.UserLoginController.auth (BankSystemAPI)'
+2023-10-10 09:48:43.652 +04:00 [INF] Route matched with {action = "auth", controller = "UserLogin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult auth(BankSystemAPI.Models.User) on controller BankSystemAPI.Controllers.UserLoginController (BankSystemAPI).
+2023-10-10 09:48:44.133 +04:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-10-10 09:48:44.178 +04:00 [INF] Executed action BankSystemAPI.Controllers.UserLoginController.auth (BankSystemAPI) in 517.9917ms
+2023-10-10 09:48:44.187 +04:00 [INF] Executed endpoint 'BankSystemAPI.Controllers.UserLoginController.auth (BankSystemAPI)'
+2023-10-10 09:48:44.192 +04:00 [INF] HTTP POST /api/UserLogin/user-loginApi responded 400 in 694.3639 ms
+2023-10-10 09:48:44.198 +04:00 [INF] Request finished HTTP/1.1 POST https://localhost:7157/api/UserLogin/user-loginApi application/json;+charset=utf-8 - - 400 - application/problem+json;+charset=utf-8 714.1217ms

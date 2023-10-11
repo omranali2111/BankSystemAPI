@@ -1,0 +1,112 @@
+2023-10-09 13:00:38.763 +04:00 [INF] User profile is available. Using 'C:\Users\ict\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-09 13:00:39.208 +04:00 [INF] Now listening on: https://localhost:7157
+2023-10-09 13:00:39.209 +04:00 [INF] Now listening on: http://localhost:5213
+2023-10-09 13:00:39.216 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-09 13:00:39.218 +04:00 [INF] Hosting environment: Development
+2023-10-09 13:00:39.220 +04:00 [INF] Content root path: C:\Users\ict\Desktop\code-TRA\API\BankSystemAPI\BankSystemAPI\
+2023-10-09 13:00:40.681 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/swagger/index.html - -
+2023-10-09 13:00:41.405 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/swagger/index.html - - - 200 - text/html;charset=utf-8 721.8500ms
+2023-10-09 13:00:41.405 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/_framework/aspnetcore-browser-refresh.js - -
+2023-10-09 13:00:41.406 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/_vs/browserLink - -
+2023-10-09 13:00:41.435 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 29.6118ms
+2023-10-09 13:00:41.478 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 72.5040ms
+2023-10-09 13:00:41.600 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/swagger/v1/swagger.json - -
+2023-10-09 13:00:41.831 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 230.7304ms
+2023-10-09 13:01:22.147 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7157/api/UserLogin/user-login application/json 98
+2023-10-09 13:01:22.171 +04:00 [INF] CORS policy execution successful.
+2023-10-09 13:01:22.309 +04:00 [INF] Executing endpoint 'BankSystemAPI.Controllers.UserLoginController.GenerateJwtToken (BankSystemAPI)'
+2023-10-09 13:01:22.362 +04:00 [INF] Route matched with {action = "GenerateJwtToken", controller = "UserLogin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GenerateJwtToken(BankSystemAPI.Models.User) on controller BankSystemAPI.Controllers.UserLoginController (BankSystemAPI).
+2023-10-09 13:01:22.857 +04:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-10-09 13:01:22.884 +04:00 [INF] Executed action BankSystemAPI.Controllers.UserLoginController.GenerateJwtToken (BankSystemAPI) in 515.152ms
+2023-10-09 13:01:22.890 +04:00 [INF] Executed endpoint 'BankSystemAPI.Controllers.UserLoginController.GenerateJwtToken (BankSystemAPI)'
+2023-10-09 13:01:22.895 +04:00 [INF] HTTP POST /api/UserLogin/user-login responded 400 in 728.8235 ms
+2023-10-09 13:01:22.905 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7157/api/UserLogin/user-login application/json 98 - 400 - application/problem+json;+charset=utf-8 758.0061ms
+2023-10-09 13:10:34.650 +04:00 [INF] User profile is available. Using 'C:\Users\ict\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-09 13:10:35.026 +04:00 [INF] Now listening on: https://localhost:7157
+2023-10-09 13:10:35.026 +04:00 [INF] Now listening on: http://localhost:5213
+2023-10-09 13:10:35.032 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-09 13:10:35.034 +04:00 [INF] Hosting environment: Development
+2023-10-09 13:10:35.035 +04:00 [INF] Content root path: C:\Users\ict\Desktop\code-TRA\API\BankSystemAPI\BankSystemAPI\
+2023-10-09 13:10:36.299 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/swagger/index.html - -
+2023-10-09 13:10:37.618 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/_framework/aspnetcore-browser-refresh.js - -
+2023-10-09 13:10:37.660 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/_vs/browserLink - -
+2023-10-09 13:10:37.672 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 51.8855ms
+2023-10-09 13:10:37.673 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/swagger/index.html - - - 200 - text/html;charset=utf-8 1381.4967ms
+2023-10-09 13:10:37.712 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 54.2871ms
+2023-10-09 13:10:37.914 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/swagger/v1/swagger.json - -
+2023-10-09 13:10:38.121 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 206.8764ms
+2023-10-09 13:10:46.421 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7157/api/UserLogin/user-login - 0
+2023-10-09 13:10:46.452 +04:00 [INF] CORS policy execution successful.
+2023-10-09 13:10:46.599 +04:00 [INF] Executing endpoint 'BankSystemAPI.Controllers.UserLoginController.GenerateJwtToken (BankSystemAPI)'
+2023-10-09 13:10:46.661 +04:00 [INF] Route matched with {action = "GenerateJwtToken", controller = "UserLogin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GenerateJwtToken(System.String, System.String) on controller BankSystemAPI.Controllers.UserLoginController (BankSystemAPI).
+2023-10-09 13:10:47.094 +04:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-10-09 13:10:47.143 +04:00 [INF] Executed action BankSystemAPI.Controllers.UserLoginController.GenerateJwtToken (BankSystemAPI) in 469.722ms
+2023-10-09 13:10:47.161 +04:00 [INF] Executed endpoint 'BankSystemAPI.Controllers.UserLoginController.GenerateJwtToken (BankSystemAPI)'
+2023-10-09 13:10:47.166 +04:00 [INF] HTTP POST /api/UserLogin/user-login responded 400 in 726.9864 ms
+2023-10-09 13:10:47.177 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7157/api/UserLogin/user-login - 0 - 400 - application/problem+json;+charset=utf-8 756.1054ms
+2023-10-09 13:23:09.300 +04:00 [INF] User profile is available. Using 'C:\Users\ict\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-09 13:23:09.676 +04:00 [INF] Now listening on: https://localhost:7157
+2023-10-09 13:23:09.676 +04:00 [INF] Now listening on: http://localhost:5213
+2023-10-09 13:23:09.680 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-09 13:23:09.681 +04:00 [INF] Hosting environment: Development
+2023-10-09 13:23:09.681 +04:00 [INF] Content root path: C:\Users\ict\Desktop\code-TRA\API\BankSystemAPI\BankSystemAPI\
+2023-10-09 13:23:10.617 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/swagger/index.html - -
+2023-10-09 13:23:11.162 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/_framework/aspnetcore-browser-refresh.js - -
+2023-10-09 13:23:11.163 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/swagger/index.html - - - 200 - text/html;charset=utf-8 547.8262ms
+2023-10-09 13:23:11.169 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/_vs/browserLink - -
+2023-10-09 13:23:11.261 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 98.6344ms
+2023-10-09 13:23:11.280 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 110.3219ms
+2023-10-09 13:23:11.362 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/swagger/v1/swagger.json - -
+2023-10-09 13:23:11.593 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 231.2947ms
+2023-10-09 13:23:46.160 +04:00 [INF] Request starting HTTP/1.1 POST https://localhost:7157/api/UserLogin/user-login text/plain;+charset=utf-8 44
+2023-10-09 13:23:46.300 +04:00 [INF] Executing endpoint 'BankSystemAPI.Controllers.UserLoginController.GenerateJwtToken (BankSystemAPI)'
+2023-10-09 13:23:46.358 +04:00 [INF] Route matched with {action = "GenerateJwtToken", controller = "UserLogin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GenerateJwtToken(System.String, System.String) on controller BankSystemAPI.Controllers.UserLoginController (BankSystemAPI).
+2023-10-09 13:23:46.796 +04:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-10-09 13:23:46.847 +04:00 [INF] Executed action BankSystemAPI.Controllers.UserLoginController.GenerateJwtToken (BankSystemAPI) in 475.4038ms
+2023-10-09 13:23:46.860 +04:00 [INF] Executed endpoint 'BankSystemAPI.Controllers.UserLoginController.GenerateJwtToken (BankSystemAPI)'
+2023-10-09 13:23:46.867 +04:00 [INF] HTTP POST /api/UserLogin/user-login responded 400 in 689.5657 ms
+2023-10-09 13:23:46.878 +04:00 [INF] Request finished HTTP/1.1 POST https://localhost:7157/api/UserLogin/user-login text/plain;+charset=utf-8 44 - 400 - application/problem+json;+charset=utf-8 718.2602ms
+2023-10-09 13:29:17.163 +04:00 [INF] User profile is available. Using 'C:\Users\ict\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-09 13:29:17.464 +04:00 [INF] Now listening on: https://localhost:7157
+2023-10-09 13:29:17.465 +04:00 [INF] Now listening on: http://localhost:5213
+2023-10-09 13:29:17.469 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-09 13:29:17.470 +04:00 [INF] Hosting environment: Development
+2023-10-09 13:29:17.471 +04:00 [INF] Content root path: C:\Users\ict\Desktop\code-TRA\API\BankSystemAPI\BankSystemAPI\
+2023-10-09 13:29:18.714 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/swagger/index.html - -
+2023-10-09 13:29:19.259 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/_framework/aspnetcore-browser-refresh.js - -
+2023-10-09 13:29:19.260 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/_vs/browserLink - -
+2023-10-09 13:29:19.266 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/swagger/index.html - - - 200 - text/html;charset=utf-8 553.6381ms
+2023-10-09 13:29:19.290 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 30.9170ms
+2023-10-09 13:29:19.315 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 54.9273ms
+2023-10-09 13:29:19.421 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/swagger/v1/swagger.json - -
+2023-10-09 13:29:19.556 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 134.9817ms
+2023-10-09 13:33:43.730 +04:00 [INF] User profile is available. Using 'C:\Users\ict\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-09 13:33:44.005 +04:00 [INF] Now listening on: https://localhost:7157
+2023-10-09 13:33:44.006 +04:00 [INF] Now listening on: http://localhost:5213
+2023-10-09 13:33:44.011 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-09 13:33:44.012 +04:00 [INF] Hosting environment: Development
+2023-10-09 13:33:44.013 +04:00 [INF] Content root path: C:\Users\ict\Desktop\code-TRA\API\BankSystemAPI\BankSystemAPI\
+2023-10-09 13:33:45.006 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/swagger/index.html - -
+2023-10-09 13:33:45.700 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/_vs/browserLink - -
+2023-10-09 13:33:45.701 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/_framework/aspnetcore-browser-refresh.js - -
+2023-10-09 13:33:45.762 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/swagger/index.html - - - 200 - text/html;charset=utf-8 757.4328ms
+2023-10-09 13:33:45.763 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 62.2087ms
+2023-10-09 13:33:45.838 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 138.0227ms
+2023-10-09 13:33:45.925 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/swagger/v1/swagger.json - -
+2023-10-09 13:33:46.184 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 259.5029ms
+2023-10-09 13:34:06.811 +04:00 [INF] Request starting HTTP/1.1 POST https://localhost:7157/api/UserLogin/user-login application/x-www-form-urlencoded;+charset=utf-8 44
+2023-10-09 13:34:06.988 +04:00 [INF] Executing endpoint 'BankSystemAPI.Controllers.UserLoginController.GenerateJwtToken (BankSystemAPI)'
+2023-10-09 13:34:07.058 +04:00 [INF] Route matched with {action = "GenerateJwtToken", controller = "UserLogin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GenerateJwtToken(System.String, System.String) on controller BankSystemAPI.Controllers.UserLoginController (BankSystemAPI).
+2023-10-09 13:34:07.519 +04:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-10-09 13:34:07.561 +04:00 [INF] Executed action BankSystemAPI.Controllers.UserLoginController.GenerateJwtToken (BankSystemAPI) in 492.2191ms
+2023-10-09 13:34:07.568 +04:00 [INF] Executed endpoint 'BankSystemAPI.Controllers.UserLoginController.GenerateJwtToken (BankSystemAPI)'
+2023-10-09 13:34:07.577 +04:00 [INF] HTTP POST /api/UserLogin/user-login responded 400 in 752.2502 ms
+2023-10-09 13:34:07.583 +04:00 [INF] Request finished HTTP/1.1 POST https://localhost:7157/api/UserLogin/user-login application/x-www-form-urlencoded;+charset=utf-8 44 - 400 - application/problem+json;+charset=utf-8 772.2533ms
+2023-10-09 13:35:41.041 +04:00 [INF] Request starting HTTP/1.1 POST https://localhost:7157/api/UserLogin/user-login text/plain;+charset=utf-8 44
+2023-10-09 13:35:41.047 +04:00 [INF] Executing endpoint 'BankSystemAPI.Controllers.UserLoginController.GenerateJwtToken (BankSystemAPI)'
+2023-10-09 13:35:41.049 +04:00 [INF] Route matched with {action = "GenerateJwtToken", controller = "UserLogin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GenerateJwtToken(System.String, System.String) on controller BankSystemAPI.Controllers.UserLoginController (BankSystemAPI).
+2023-10-09 13:35:41.071 +04:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-10-09 13:35:41.072 +04:00 [INF] Executed action BankSystemAPI.Controllers.UserLoginController.GenerateJwtToken (BankSystemAPI) in 18.7042ms
+2023-10-09 13:35:41.073 +04:00 [INF] Executed endpoint 'BankSystemAPI.Controllers.UserLoginController.GenerateJwtToken (BankSystemAPI)'
+2023-10-09 13:35:41.074 +04:00 [INF] HTTP POST /api/UserLogin/user-login responded 400 in 28.5041 ms
+2023-10-09 13:35:41.075 +04:00 [INF] Request finished HTTP/1.1 POST https://localhost:7157/api/UserLogin/user-login text/plain;+charset=utf-8 44 - 400 - application/problem+json;+charset=utf-8 33.9401ms

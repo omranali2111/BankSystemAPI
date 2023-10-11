@@ -1,0 +1,217 @@
+2023-10-11 10:06:31.521 +04:00 [INF] User profile is available. Using 'C:\Users\ict\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-11 10:06:32.892 +04:00 [INF] Now listening on: https://localhost:7157
+2023-10-11 10:06:33.033 +04:00 [INF] Now listening on: http://localhost:5213
+2023-10-11 10:06:33.100 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-11 10:06:33.156 +04:00 [INF] Hosting environment: Development
+2023-10-11 10:06:33.158 +04:00 [INF] Content root path: C:\Users\ict\Desktop\code-TRA\API\BankSystemAPI\BankSystemAPI\
+2023-10-11 10:06:38.339 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/swagger/index.html - -
+2023-10-11 10:06:39.216 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/_framework/aspnetcore-browser-refresh.js - -
+2023-10-11 10:06:39.216 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/_vs/browserLink - -
+2023-10-11 10:06:39.228 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/swagger/index.html - - - 200 - text/html;charset=utf-8 896.6739ms
+2023-10-11 10:06:39.242 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 25.5290ms
+2023-10-11 10:06:39.469 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 252.9439ms
+2023-10-11 10:06:39.660 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/swagger/v1/swagger.json - -
+2023-10-11 10:06:39.947 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 286.9935ms
+2023-10-11 10:10:51.875 +04:00 [INF] Request starting HTTP/1.1 POST https://localhost:7157/api/UserLogin/user-login application/json;+charset=utf-8 -
+2023-10-11 10:10:52.006 +04:00 [INF] Executing endpoint 'BankSystemAPI.Controllers.UserLoginController.GenerateJwtToken (BankSystemAPI)'
+2023-10-11 10:10:52.050 +04:00 [INF] Route matched with {action = "GenerateJwtToken", controller = "UserLogin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GenerateJwtToken(BankSystemAPI.Models.loginClass) on controller BankSystemAPI.Controllers.UserLoginController (BankSystemAPI).
+2023-10-11 10:10:53.507 +04:00 [WRN] No store type was specified for the decimal property 'Amount' on entity type 'Transaction'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-10-11 10:10:55.257 +04:00 [INF] Executed DbCommand (147ms) [Parameters=[@__user1_Email_0='?' (Size = 255), @__user1_Password_1='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[UserId], [u].[Email], [u].[Name], [u].[Password]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__user1_Email_0 AND [u].[Password] = @__user1_Password_1
+2023-10-11 10:10:55.664 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2023-10-11 10:10:55.672 +04:00 [INF] Executed action BankSystemAPI.Controllers.UserLoginController.GenerateJwtToken (BankSystemAPI) in 3616.7503ms
+2023-10-11 10:10:55.674 +04:00 [INF] Executed endpoint 'BankSystemAPI.Controllers.UserLoginController.GenerateJwtToken (BankSystemAPI)'
+2023-10-11 10:10:55.677 +04:00 [INF] HTTP POST /api/UserLogin/user-login responded 200 in 3792.2672 ms
+2023-10-11 10:10:55.693 +04:00 [INF] Request finished HTTP/1.1 POST https://localhost:7157/api/UserLogin/user-login application/json;+charset=utf-8 - - 200 - text/plain;+charset=utf-8 3818.3874ms
+2023-10-11 10:10:55.698 +04:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7157/api/AccountOperation/withdraw application/json;+charset=utf-8 -
+2023-10-11 10:10:55.721 +04:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-10-11 10:10:55.734 +04:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-10-11 10:10:55.738 +04:00 [INF] HTTP PUT /api/AccountOperation/withdraw responded 401 in 34.7701 ms
+2023-10-11 10:10:55.739 +04:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7157/api/AccountOperation/withdraw application/json;+charset=utf-8 - - 401 0 - 40.7133ms
+2023-10-11 10:17:59.292 +04:00 [INF] User profile is available. Using 'C:\Users\ict\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-11 10:17:59.706 +04:00 [INF] Now listening on: https://localhost:7157
+2023-10-11 10:17:59.707 +04:00 [INF] Now listening on: http://localhost:5213
+2023-10-11 10:17:59.713 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-11 10:17:59.714 +04:00 [INF] Hosting environment: Development
+2023-10-11 10:17:59.714 +04:00 [INF] Content root path: C:\Users\ict\Desktop\code-TRA\API\BankSystemAPI\BankSystemAPI\
+2023-10-11 10:18:01.202 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/swagger/index.html - -
+2023-10-11 10:18:01.863 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/swagger/index.html - - - 200 - text/html;charset=utf-8 667.1505ms
+2023-10-11 10:18:01.864 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/_framework/aspnetcore-browser-refresh.js - -
+2023-10-11 10:18:01.864 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/_vs/browserLink - -
+2023-10-11 10:18:01.883 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 19.5197ms
+2023-10-11 10:18:01.943 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 79.1423ms
+2023-10-11 10:18:02.025 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/swagger/v1/swagger.json - -
+2023-10-11 10:18:02.193 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 167.5391ms
+2023-10-11 10:19:02.260 +04:00 [INF] Request starting HTTP/1.1 POST https://localhost:7157/api/UserLogin/user-login application/json;+charset=utf-8 -
+2023-10-11 10:19:02.470 +04:00 [INF] Executing endpoint 'BankSystemAPI.Controllers.UserLoginController.GenerateJwtToken (BankSystemAPI)'
+2023-10-11 10:19:02.535 +04:00 [INF] Route matched with {action = "GenerateJwtToken", controller = "UserLogin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GenerateJwtToken(BankSystemAPI.Models.loginClass) on controller BankSystemAPI.Controllers.UserLoginController (BankSystemAPI).
+2023-10-11 10:19:05.441 +04:00 [WRN] No store type was specified for the decimal property 'Amount' on entity type 'Transaction'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-10-11 10:19:08.774 +04:00 [INF] Executed DbCommand (220ms) [Parameters=[@__user1_Email_0='?' (Size = 255), @__user1_Password_1='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[UserId], [u].[Email], [u].[Name], [u].[Password]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__user1_Email_0 AND [u].[Password] = @__user1_Password_1
+2023-10-11 10:19:09.461 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2023-10-11 10:19:09.481 +04:00 [INF] Executed action BankSystemAPI.Controllers.UserLoginController.GenerateJwtToken (BankSystemAPI) in 6927.9528ms
+2023-10-11 10:19:09.488 +04:00 [INF] Executed endpoint 'BankSystemAPI.Controllers.UserLoginController.GenerateJwtToken (BankSystemAPI)'
+2023-10-11 10:19:09.497 +04:00 [INF] HTTP POST /api/UserLogin/user-login responded 200 in 7217.7924 ms
+2023-10-11 10:19:09.549 +04:00 [INF] Request finished HTTP/1.1 POST https://localhost:7157/api/UserLogin/user-login application/json;+charset=utf-8 - - 200 - text/plain;+charset=utf-8 7289.0883ms
+2023-10-11 10:19:28.358 +04:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7157/api/AccountOperation/withdraw application/json;+charset=utf-8 -
+2023-10-11 10:19:28.613 +04:00 [INF] Executing endpoint 'BankSystemAPI.Controllers.AccountOperationController.Withdraw (BankSystemAPI)'
+2023-10-11 10:19:28.618 +04:00 [INF] Route matched with {action = "Withdraw", controller = "AccountOperation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Withdraw(BankSystemAPI.Models.withdrawClass) on controller BankSystemAPI.Controllers.AccountOperationController (BankSystemAPI).
+2023-10-11 10:19:28.719 +04:00 [INF] Executed DbCommand (20ms) [Parameters=[@__8__locals1_withdraw_accountNumber_0='?' (DbType = Int32), @__userId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[AccountNumber], [a].[AccountHolderName], [a].[Balance], [a].[UserId]
+FROM [Accounts] AS [a]
+WHERE [a].[AccountNumber] = @__8__locals1_withdraw_accountNumber_0 AND [a].[UserId] = @__userId_1
+2023-10-11 10:19:29.076 +04:00 [INF] Executed DbCommand (42ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (Precision = 18) (Scale = 2) (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Accounts] SET [Balance] = @p0
+OUTPUT 1
+WHERE [AccountNumber] = @p1;
+2023-10-11 10:19:29.157 +04:00 [INF] Executed DbCommand (17ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[AccountNumber], [a].[AccountHolderName], [a].[Balance], [a].[UserId]
+FROM [Accounts] AS [a]
+WHERE [a].[AccountNumber] = @__p_0
+2023-10-11 10:19:29.179 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[AccountNumber], [a].[AccountHolderName], [a].[Balance], [a].[UserId]
+FROM [Accounts] AS [a]
+WHERE [a].[AccountNumber] = @__p_0
+2023-10-11 10:19:29.520 +04:00 [INF] Executed DbCommand (37ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = DateTime2), @p5='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Transactions] ([AccountId], [Amount], [SrcAccNO], [TargetAccNO], [Timestamp], [Type])
+OUTPUT INSERTED.[TransId]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2023-10-11 10:19:29.562 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2023-10-11 10:19:29.564 +04:00 [INF] Executed action BankSystemAPI.Controllers.AccountOperationController.Withdraw (BankSystemAPI) in 941.8472ms
+2023-10-11 10:19:29.565 +04:00 [INF] Executed endpoint 'BankSystemAPI.Controllers.AccountOperationController.Withdraw (BankSystemAPI)'
+2023-10-11 10:19:29.566 +04:00 [INF] HTTP PUT /api/AccountOperation/withdraw responded 200 in 1199.1731 ms
+2023-10-11 10:19:29.568 +04:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7157/api/AccountOperation/withdraw application/json;+charset=utf-8 - - 200 - text/plain;+charset=utf-8 1209.4750ms
+2023-10-11 10:25:31.387 +04:00 [INF] User profile is available. Using 'C:\Users\ict\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-11 10:25:31.761 +04:00 [INF] Now listening on: https://localhost:7157
+2023-10-11 10:25:31.762 +04:00 [INF] Now listening on: http://localhost:5213
+2023-10-11 10:25:31.768 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-11 10:25:31.769 +04:00 [INF] Hosting environment: Development
+2023-10-11 10:25:31.770 +04:00 [INF] Content root path: C:\Users\ict\Desktop\code-TRA\API\BankSystemAPI\BankSystemAPI\
+2023-10-11 10:25:32.282 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/swagger/index.html - -
+2023-10-11 10:25:32.754 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/_framework/aspnetcore-browser-refresh.js - -
+2023-10-11 10:25:32.754 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/_vs/browserLink - -
+2023-10-11 10:25:32.773 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 18.6584ms
+2023-10-11 10:25:32.773 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/swagger/index.html - - - 200 - text/html;charset=utf-8 487.6156ms
+2023-10-11 10:25:32.905 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 150.9829ms
+2023-10-11 10:25:33.022 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/swagger/v1/swagger.json - -
+2023-10-11 10:25:33.214 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 192.3717ms
+2023-10-11 10:28:00.938 +04:00 [INF] Request starting HTTP/1.1 POST https://localhost:7157/api/UserLogin/user-login application/json;+charset=utf-8 -
+2023-10-11 10:28:01.155 +04:00 [INF] Executing endpoint 'BankSystemAPI.Controllers.UserLoginController.GenerateJwtToken (BankSystemAPI)'
+2023-10-11 10:28:01.249 +04:00 [INF] Route matched with {action = "GenerateJwtToken", controller = "UserLogin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GenerateJwtToken(BankSystemAPI.Models.loginClass) on controller BankSystemAPI.Controllers.UserLoginController (BankSystemAPI).
+2023-10-11 10:28:04.228 +04:00 [WRN] No store type was specified for the decimal property 'Amount' on entity type 'Transaction'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-10-11 10:28:07.377 +04:00 [INF] Executed DbCommand (245ms) [Parameters=[@__user1_Email_0='?' (Size = 255), @__user1_Password_1='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[UserId], [u].[Email], [u].[Name], [u].[Password]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__user1_Email_0 AND [u].[Password] = @__user1_Password_1
+2023-10-11 10:28:08.077 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2023-10-11 10:28:08.099 +04:00 [INF] Executed action BankSystemAPI.Controllers.UserLoginController.GenerateJwtToken (BankSystemAPI) in 6831.78ms
+2023-10-11 10:28:08.104 +04:00 [INF] Executed endpoint 'BankSystemAPI.Controllers.UserLoginController.GenerateJwtToken (BankSystemAPI)'
+2023-10-11 10:28:08.118 +04:00 [INF] HTTP POST /api/UserLogin/user-login responded 200 in 7151.3702 ms
+2023-10-11 10:28:08.167 +04:00 [INF] Request finished HTTP/1.1 POST https://localhost:7157/api/UserLogin/user-login application/json;+charset=utf-8 - - 200 - text/plain;+charset=utf-8 7229.4729ms
+2023-10-11 10:28:08.170 +04:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7157/api/AccountOperation/withdraw application/json;+charset=utf-8 -
+2023-10-11 10:28:08.419 +04:00 [INF] Executing endpoint 'BankSystemAPI.Controllers.AccountOperationController.Withdraw (BankSystemAPI)'
+2023-10-11 10:28:08.423 +04:00 [INF] Route matched with {action = "Withdraw", controller = "AccountOperation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Withdraw(BankSystemAPI.Models.withdrawClass) on controller BankSystemAPI.Controllers.AccountOperationController (BankSystemAPI).
+2023-10-11 10:28:08.553 +04:00 [INF] Executed DbCommand (16ms) [Parameters=[@__8__locals1_withdraw_accountNumber_0='?' (DbType = Int32), @__userId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[AccountNumber], [a].[AccountHolderName], [a].[Balance], [a].[UserId]
+FROM [Accounts] AS [a]
+WHERE [a].[AccountNumber] = @__8__locals1_withdraw_accountNumber_0 AND [a].[UserId] = @__userId_1
+2023-10-11 10:28:08.560 +04:00 [INF] Executing NotFoundObjectResult, writing value of type 'System.String'.
+2023-10-11 10:28:08.565 +04:00 [INF] Executed action BankSystemAPI.Controllers.AccountOperationController.Withdraw (BankSystemAPI) in 139.7131ms
+2023-10-11 10:28:08.568 +04:00 [INF] Executed endpoint 'BankSystemAPI.Controllers.AccountOperationController.Withdraw (BankSystemAPI)'
+2023-10-11 10:28:08.570 +04:00 [INF] HTTP PUT /api/AccountOperation/withdraw responded 404 in 395.8572 ms
+2023-10-11 10:28:08.574 +04:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7157/api/AccountOperation/withdraw application/json;+charset=utf-8 - - 404 - text/plain;+charset=utf-8 403.2442ms
+2023-10-11 10:38:14.558 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/swagger/index.html - -
+2023-10-11 10:38:15.500 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/swagger/index.html - - - 200 - text/html;charset=utf-8 941.8072ms
+2023-10-11 10:38:15.631 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/_framework/aspnetcore-browser-refresh.js - -
+2023-10-11 10:38:15.633 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/_vs/browserLink - -
+2023-10-11 10:38:15.637 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 6.3096ms
+2023-10-11 10:38:15.736 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 102.7862ms
+2023-10-11 10:38:15.915 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/swagger/v1/swagger.json - -
+2023-10-11 10:38:15.926 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 10.9971ms
+2023-10-11 10:41:28.520 +04:00 [INF] User profile is available. Using 'C:\Users\ict\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-11 10:41:29.323 +04:00 [INF] Now listening on: https://localhost:7157
+2023-10-11 10:41:29.326 +04:00 [INF] Now listening on: http://localhost:5213
+2023-10-11 10:41:29.332 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-11 10:41:29.334 +04:00 [INF] Hosting environment: Development
+2023-10-11 10:41:29.335 +04:00 [INF] Content root path: C:\Users\ict\Desktop\code-TRA\API\BankSystemAPI\BankSystemAPI\
+2023-10-11 10:41:31.208 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/swagger/index.html - -
+2023-10-11 10:41:32.470 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/_vs/browserLink - -
+2023-10-11 10:41:32.470 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/_framework/aspnetcore-browser-refresh.js - -
+2023-10-11 10:41:32.501 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 30.5199ms
+2023-10-11 10:41:32.501 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/swagger/index.html - - - 200 - text/html;charset=utf-8 1311.4588ms
+2023-10-11 10:41:32.610 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 139.8884ms
+2023-10-11 10:41:32.714 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/swagger/v1/swagger.json - -
+2023-10-11 10:41:33.012 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 297.9114ms
+2023-10-11 10:43:37.229 +04:00 [INF] Request starting HTTP/1.1 POST https://localhost:7157/api/UserLogin/user-login application/json;+charset=utf-8 -
+2023-10-11 10:43:37.509 +04:00 [INF] Executing endpoint 'BankSystemAPI.Controllers.UserLoginController.GenerateJwtToken (BankSystemAPI)'
+2023-10-11 10:43:37.578 +04:00 [INF] Route matched with {action = "GenerateJwtToken", controller = "UserLogin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GenerateJwtToken(BankSystemAPI.Models.loginClass) on controller BankSystemAPI.Controllers.UserLoginController (BankSystemAPI).
+2023-10-11 10:43:40.409 +04:00 [WRN] No store type was specified for the decimal property 'Amount' on entity type 'Transaction'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-10-11 10:43:43.309 +04:00 [INF] Executed DbCommand (187ms) [Parameters=[@__user1_Email_0='?' (Size = 255), @__user1_Password_1='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[UserId], [u].[Email], [u].[Name], [u].[Password]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__user1_Email_0 AND [u].[Password] = @__user1_Password_1
+2023-10-11 10:43:43.972 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2023-10-11 10:43:43.988 +04:00 [INF] Executed action BankSystemAPI.Controllers.UserLoginController.GenerateJwtToken (BankSystemAPI) in 6358.6071ms
+2023-10-11 10:43:43.991 +04:00 [INF] Executed endpoint 'BankSystemAPI.Controllers.UserLoginController.GenerateJwtToken (BankSystemAPI)'
+2023-10-11 10:43:43.999 +04:00 [INF] HTTP POST /api/UserLogin/user-login responded 200 in 6745.1842 ms
+2023-10-11 10:43:44.045 +04:00 [INF] Request finished HTTP/1.1 POST https://localhost:7157/api/UserLogin/user-login application/json;+charset=utf-8 - - 200 - text/plain;+charset=utf-8 6816.2195ms
+2023-10-11 10:43:44.048 +04:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7157/api/AccountOperation/withdraw application/json;+charset=utf-8 -
+2023-10-11 10:43:44.283 +04:00 [INF] Executing endpoint 'BankSystemAPI.Controllers.AccountOperationController.Withdraw (BankSystemAPI)'
+2023-10-11 10:43:44.286 +04:00 [INF] Route matched with {action = "Withdraw", controller = "AccountOperation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Withdraw(BankSystemAPI.Models.withdrawClass) on controller BankSystemAPI.Controllers.AccountOperationController (BankSystemAPI).
+2023-10-11 10:43:44.373 +04:00 [INF] Executed DbCommand (19ms) [Parameters=[@__8__locals1_withdraw_accountNumber_0='?' (DbType = Int32), @__userId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[AccountNumber], [a].[AccountHolderName], [a].[Balance], [a].[UserId]
+FROM [Accounts] AS [a]
+WHERE [a].[AccountNumber] = @__8__locals1_withdraw_accountNumber_0 AND [a].[UserId] = @__userId_1
+2023-10-11 10:43:44.377 +04:00 [INF] Executing NotFoundObjectResult, writing value of type 'System.String'.
+2023-10-11 10:43:44.378 +04:00 [INF] Executed action BankSystemAPI.Controllers.AccountOperationController.Withdraw (BankSystemAPI) in 89.9369ms
+2023-10-11 10:43:44.380 +04:00 [INF] Executed endpoint 'BankSystemAPI.Controllers.AccountOperationController.Withdraw (BankSystemAPI)'
+2023-10-11 10:43:44.381 +04:00 [INF] HTTP PUT /api/AccountOperation/withdraw responded 404 in 328.0008 ms
+2023-10-11 10:43:44.383 +04:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7157/api/AccountOperation/withdraw application/json;+charset=utf-8 - - 404 - text/plain;+charset=utf-8 334.0784ms
+2023-10-11 10:55:31.668 +04:00 [INF] User profile is available. Using 'C:\Users\ict\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-11 10:55:32.495 +04:00 [INF] Now listening on: https://localhost:7157
+2023-10-11 10:55:32.529 +04:00 [INF] Now listening on: http://localhost:5213
+2023-10-11 10:55:32.537 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-11 10:55:32.540 +04:00 [INF] Hosting environment: Development
+2023-10-11 10:55:32.542 +04:00 [INF] Content root path: C:\Users\ict\Desktop\code-TRA\API\BankSystemAPI\BankSystemAPI\
+2023-10-11 10:55:34.650 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/swagger/index.html - -
+2023-10-11 10:55:36.776 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/swagger/index.html - - - 200 - text/html;charset=utf-8 2128.9344ms
+2023-10-11 10:55:36.965 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/_framework/aspnetcore-browser-refresh.js - -
+2023-10-11 10:55:36.980 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 15.0921ms
+2023-10-11 10:55:37.100 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/_vs/browserLink - -
+2023-10-11 10:55:37.430 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 329.6345ms
+2023-10-11 10:55:38.253 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/swagger/v1/swagger.json - -
+2023-10-11 10:55:38.542 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 288.7892ms
+2023-10-11 10:58:16.664 +04:00 [INF] Request starting HTTP/1.1 POST https://localhost:7157/api/UserLogin/user-login application/json;+charset=utf-8 -
+2023-10-11 10:58:16.902 +04:00 [INF] Executing endpoint 'BankSystemAPI.Controllers.UserLoginController.GenerateJwtToken (BankSystemAPI)'
+2023-10-11 10:58:16.997 +04:00 [INF] Route matched with {action = "GenerateJwtToken", controller = "UserLogin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GenerateJwtToken(BankSystemAPI.Models.loginClass) on controller BankSystemAPI.Controllers.UserLoginController (BankSystemAPI).
+2023-10-11 10:58:19.781 +04:00 [WRN] No store type was specified for the decimal property 'Amount' on entity type 'Transaction'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-10-11 10:58:22.803 +04:00 [INF] Executed DbCommand (169ms) [Parameters=[@__user1_Email_0='?' (Size = 255), @__user1_Password_1='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[UserId], [u].[Email], [u].[Name], [u].[Password]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__user1_Email_0 AND [u].[Password] = @__user1_Password_1
+2023-10-11 10:58:23.437 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2023-10-11 10:58:23.462 +04:00 [INF] Executed action BankSystemAPI.Controllers.UserLoginController.GenerateJwtToken (BankSystemAPI) in 6446.333ms
+2023-10-11 10:58:23.467 +04:00 [INF] Executed endpoint 'BankSystemAPI.Controllers.UserLoginController.GenerateJwtToken (BankSystemAPI)'
+2023-10-11 10:58:23.478 +04:00 [INF] HTTP POST /api/UserLogin/user-login responded 200 in 6790.8233 ms
+2023-10-11 10:58:23.521 +04:00 [INF] Request finished HTTP/1.1 POST https://localhost:7157/api/UserLogin/user-login application/json;+charset=utf-8 - - 200 - text/plain;+charset=utf-8 6856.9030ms
+2023-10-11 10:58:23.525 +04:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7157/api/AccountOperation/withdraw application/json;+charset=utf-8 -
+2023-10-11 10:58:23.754 +04:00 [INF] Executing endpoint 'BankSystemAPI.Controllers.AccountOperationController.Withdraw (BankSystemAPI)'
+2023-10-11 10:58:23.759 +04:00 [INF] Route matched with {action = "Withdraw", controller = "AccountOperation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Withdraw(BankSystemAPI.Models.withdrawClass) on controller BankSystemAPI.Controllers.AccountOperationController (BankSystemAPI).
+2023-10-11 10:58:23.842 +04:00 [INF] Executed DbCommand (17ms) [Parameters=[@__8__locals1_withdraw_accountNumber_0='?' (DbType = Int32), @__userId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[AccountNumber], [a].[AccountHolderName], [a].[Balance], [a].[UserId]
+FROM [Accounts] AS [a]
+WHERE [a].[AccountNumber] = @__8__locals1_withdraw_accountNumber_0 AND [a].[UserId] = @__userId_1
+2023-10-11 10:58:23.849 +04:00 [INF] Executing NotFoundObjectResult, writing value of type 'System.String'.
+2023-10-11 10:58:23.854 +04:00 [INF] Executed action BankSystemAPI.Controllers.AccountOperationController.Withdraw (BankSystemAPI) in 92.6152ms
+2023-10-11 10:58:23.856 +04:00 [INF] Executed endpoint 'BankSystemAPI.Controllers.AccountOperationController.Withdraw (BankSystemAPI)'
+2023-10-11 10:58:23.858 +04:00 [INF] HTTP PUT /api/AccountOperation/withdraw responded 404 in 328.5390 ms
+2023-10-11 10:58:23.859 +04:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7157/api/AccountOperation/withdraw application/json;+charset=utf-8 - - 404 - text/plain;+charset=utf-8 334.6745ms

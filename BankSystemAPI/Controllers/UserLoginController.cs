@@ -1,6 +1,8 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using BankSystemAPI.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
+using System.ComponentModel.DataAnnotations;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
@@ -20,14 +22,14 @@ namespace BankSystemAPI.Controllers
 
 
         [HttpPost("user-login")]
-        public IActionResult GenerateJwtToken(string email, string password)
+        public IActionResult GenerateJwtToken(loginClass user1)
         {
             // Validate user credentials
-            var user = dbContext.Users.SingleOrDefault(u => u.Email == email && u.Password == password);
+            var user = dbContext.Users.SingleOrDefault(u => u.Email == user1.Email && u.Password == user1.Password);
 
-           
+
             // Create claims for the user
-            
+
             if (user != null)
             {
                 var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("this is my custom Secret key for authentication"));
@@ -57,5 +59,15 @@ namespace BankSystemAPI.Controllers
             }
         }
 
+        //[HttpPost("user-loginApi")]
+        //public IActionResult auth(User user)
+        //{
+            
+        //    string Email = user.Email, Password = user.Password;
+
+            
+        //    return GenerateJwtToken(Email, Password);
+
+        //}
     }
 }

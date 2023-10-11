@@ -76,7 +76,7 @@ namespace BankSystemAPI.Controllers
         }
         [Authorize]
         [HttpPut("withdraw")]
-        public ActionResult Withdraw( int accountNumber, decimal withdrawalAmount)
+        public IActionResult Withdraw(withdrawClass withdraw)
         {
             try
             {
@@ -90,18 +90,18 @@ namespace BankSystemAPI.Controllers
                 }
 
                 int userId = int.Parse(userIdClaim.Value);
-                var account = dbContext.Accounts.FirstOrDefault(a => a.AccountNumber == accountNumber && a.UserId == userId);
+                var account = dbContext.Accounts.FirstOrDefault(a => a.AccountNumber == withdraw.accountNumber && a.UserId == userId);
 
                 if (account != null)
                 {
                     decimal currentBalance = account.Balance;
 
-                    if (currentBalance >= withdrawalAmount)
+                    if (currentBalance >= withdraw.withdrawalAmount)
                     {
-                        account.Balance -= withdrawalAmount;
+                        account.Balance -= withdraw.withdrawalAmount;
                         dbContext.SaveChanges();
 
-                        RecordTransaction("Withdrawal", withdrawalAmount, accountNumber, null);
+                        RecordTransaction("Withdrawal", withdraw.withdrawalAmount, withdraw.accountNumber, null);
 
                         return Ok("Withdrawal successful!");
                     }

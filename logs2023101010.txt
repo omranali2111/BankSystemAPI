@@ -1,0 +1,48 @@
+2023-10-10 10:00:17.418 +04:00 [INF] User profile is available. Using 'C:\Users\ict\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-10 10:00:17.738 +04:00 [INF] Now listening on: https://localhost:7157
+2023-10-10 10:00:17.738 +04:00 [INF] Now listening on: http://localhost:5213
+2023-10-10 10:00:17.743 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-10 10:00:17.745 +04:00 [INF] Hosting environment: Development
+2023-10-10 10:00:17.745 +04:00 [INF] Content root path: C:\Users\ict\Desktop\code-TRA\API\BankSystemAPI\BankSystemAPI\
+2023-10-10 10:00:18.584 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/swagger/index.html - -
+2023-10-10 10:00:19.099 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/_framework/aspnetcore-browser-refresh.js - -
+2023-10-10 10:00:19.106 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/_vs/browserLink - -
+2023-10-10 10:00:19.120 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/swagger/index.html - - - 200 - text/html;charset=utf-8 537.0746ms
+2023-10-10 10:00:19.173 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 74.5973ms
+2023-10-10 10:00:19.241 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 135.4967ms
+2023-10-10 10:00:19.321 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/swagger/v1/swagger.json - -
+2023-10-10 10:00:19.531 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 209.3294ms
+2023-10-10 10:00:50.431 +04:00 [INF] Request starting HTTP/1.1 POST https://localhost:7157/api/UserLogin/user-login application/json;+charset=utf-8 -
+2023-10-10 10:00:50.560 +04:00 [INF] Executing endpoint 'BankSystemAPI.Controllers.UserLoginController.GenerateJwtToken (BankSystemAPI)'
+2023-10-10 10:00:50.592 +04:00 [INF] Route matched with {action = "GenerateJwtToken", controller = "UserLogin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GenerateJwtToken(BankSystemAPI.Models.loginClass) on controller BankSystemAPI.Controllers.UserLoginController (BankSystemAPI).
+2023-10-10 10:00:52.301 +04:00 [WRN] No store type was specified for the decimal property 'Amount' on entity type 'Transaction'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-10-10 10:00:54.292 +04:00 [INF] Executed DbCommand (240ms) [Parameters=[@__user1_Email_0='?' (Size = 255), @__user1_Password_1='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[UserId], [u].[Email], [u].[Name], [u].[Password]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__user1_Email_0 AND [u].[Password] = @__user1_Password_1
+2023-10-10 10:00:54.705 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2023-10-10 10:00:54.715 +04:00 [INF] Executed action BankSystemAPI.Controllers.UserLoginController.GenerateJwtToken (BankSystemAPI) in 4114.6251ms
+2023-10-10 10:00:54.717 +04:00 [INF] Executed endpoint 'BankSystemAPI.Controllers.UserLoginController.GenerateJwtToken (BankSystemAPI)'
+2023-10-10 10:00:54.724 +04:00 [INF] HTTP POST /api/UserLogin/user-login responded 200 in 4279.6952 ms
+2023-10-10 10:00:54.755 +04:00 [INF] Request finished HTTP/1.1 POST https://localhost:7157/api/UserLogin/user-login application/json;+charset=utf-8 - - 200 - text/plain;+charset=utf-8 4324.8482ms
+2023-10-10 10:16:57.125 +04:00 [INF] User profile is available. Using 'C:\Users\ict\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-10 10:16:57.588 +04:00 [INF] Now listening on: https://localhost:7157
+2023-10-10 10:16:57.598 +04:00 [INF] Now listening on: http://localhost:5213
+2023-10-10 10:16:57.605 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-10 10:16:57.607 +04:00 [INF] Hosting environment: Development
+2023-10-10 10:16:57.608 +04:00 [INF] Content root path: C:\Users\ict\Desktop\code-TRA\API\BankSystemAPI\BankSystemAPI\
+2023-10-10 10:16:58.649 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/swagger/index.html - -
+2023-10-10 10:16:59.495 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/_framework/aspnetcore-browser-refresh.js - -
+2023-10-10 10:16:59.495 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/_vs/browserLink - -
+2023-10-10 10:16:59.568 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/swagger/index.html - - - 200 - text/html;charset=utf-8 1015.5159ms
+2023-10-10 10:16:59.570 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 75.1717ms
+2023-10-10 10:16:59.629 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 133.7170ms
+2023-10-10 10:16:59.765 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7157/swagger/v1/swagger.json - -
+2023-10-10 10:17:00.045 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7157/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 279.7816ms
+2023-10-10 10:18:21.794 +04:00 [INF] Request starting HTTP/2 PUT https://localhost:7157/api/AccountOperation/withdraw?accountNumber=1&withdrawalAmount=10 - 0
+2023-10-10 10:18:21.810 +04:00 [INF] CORS policy execution successful.
+2023-10-10 10:18:21.931 +04:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-10-10 10:18:21.947 +04:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-10-10 10:18:21.954 +04:00 [INF] HTTP PUT /api/AccountOperation/withdraw responded 401 in 144.6799 ms
+2023-10-10 10:18:21.961 +04:00 [INF] Request finished HTTP/2 PUT https://localhost:7157/api/AccountOperation/withdraw?accountNumber=1&withdrawalAmount=10 - 0 - 401 0 - 167.0469ms
